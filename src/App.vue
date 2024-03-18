@@ -13,6 +13,8 @@
         <span class="demo-stories-name">{{ userStories.user.name }}</span>
       </a>
     </div>
+    <hr>
+    <Wave/>
   </div>
 
   <!-- Stories Slider -->
@@ -57,6 +59,7 @@ import Swiper from 'swiper';
 import { EffectCube } from 'swiper/modules';
 
 import { StoriesSlider, Stories, Story } from './Story/stories-slider-vue';
+import Wave from './components/Wave.vue'
 
 import './Story/stories-slider.css';
 
@@ -69,6 +72,7 @@ export default {
     Stories,
     Story,
     Post,
+    Wave
   },
   setup() {
     let storiesSlider = null;
